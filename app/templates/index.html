@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>👷‍♂️ Concrete Compressive Strength Preditor App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   
+</head>
+<body>
+    <nav class="#304ffe indigo accent-4" role="navigation">
+        <div class="nav-wrapper container"><a id="logo-container" href="https://www.linkedin.com/in/nishant-dhingra-82515918a/" class="brand-logo">👷‍♂️👨‍💻 Nishant Dhingra</a>
+          </div>
+      </nav>
+    
+    
+      <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+          <br><br>
+          <h1 class="header center blue-text">Concrete Compressive Strength Predictor</h1>
+          <div class="row center">
+            <h5 class="header col s12 #bdbdbd grey-text lighten-1">Combining Civil Engineering with AI, Predict the Concrete Compressive Strength beforehand by filling required fields with error less than 3MPA . 
+            <br>
+            </h5>
+          </div>
+
+          <div class="row">
+            <form action='/predict' method="POST" class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+        
+                  <input id="Cement" name='Cement' type="text" class="validate" required>
+                  <label for="Cement">Cement</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="BlastFurnaceSlag"  name="BlastFurnaceSlag" type="text" class="validate" required>
+                  <label for="BlastFurnaceSlag">Blast Furnace Slag </label>
+        
+                </div>
+        
+                <div class="input-field col s6">
+                  <input id="Fly Ash" name="FlyAsh" type="text" class="validate" required>
+                    <label for="FlyAsh">Fly Ash</label>
+                    
+    
+        
+                </div>
+
+                <div class="input-field col s6">
+                  <input id="Water" name="Water" type="text" class="validate" required>  
+                  <label for="Water">Water</label>
+            
+        
+                </div>
+
+                <div class="input-field col s6">
+                  <input id="Superplastisizer" name="Superplastisizer" type="text" required class="validate">  
+                  <label for="Superplastisizer">Superplastisizer</label>
+                    
+                
+        
+                </div>
+
+                <div class="input-field col s6">
+                  <input id="CoarseAggregate" name="CoarseAggregate" type="text" required class="validate">  
+                  <label for="CoarseAggregate">Coarse Aggregate</label>
+                    
+                  
+        
+                </div>
+
+                <div class="input-field col s6">
+                  <input id="FineAggregate" name="FineAggregate" type="text" required class="validate">  
+                  <label for="FineAggregate">Fine Aggregate</label>
+                    
+                  
+        
+                </div>
+
+                <div class="input-field col s6">
+                  <input id="Age" name="Age" type="text" required class="validate">  
+                  <label for="Age">Age</label>
+                  
+                  
+        
+                </div>
+        
+              </div>
+              <div class="row center">
+
+                <button type="submit" class="btn-large waves-effect waves-light blue">Predict</button>
+            </div>
+          </form>
+            </div>
+      
+            <br><h4 class = "blue-text" align ="center">  {{pred}}</h4>
+              <br>
+      
+          </div>
+        </div>
+      
+        
+        <br>
+
+    </form>
+</body>
+</html>
